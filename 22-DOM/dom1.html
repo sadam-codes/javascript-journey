@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to create a new element in DOM</title>
+  </head>
+  <body style="background-color: black; color: #fff">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+      <div class="day">Friday</div>
+      <div class="day">Saturday</div>
+      <div class="day">Sunday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[2]);
+    console.log(parent.children[2].innerHTML);
+    for (let index = 0; parent.children.length; index++) {
+      console.log(parent.children[index].innerHTML);
+    }
+    parent.children[1].style.color = "purple";
+    parent.children[1].style.background = "yellow";
+    parent.firstElementChild;
+    parent.lastElementChild;
+
+    // go from child to parent
+    const days = document.querySelector(".day");
+    console.log(days.parentElement);
+    console.log(days.nextElementSibling);
+    console.log("Total Nodes are :", parent.childNodes);
+  </script>
+</html>
