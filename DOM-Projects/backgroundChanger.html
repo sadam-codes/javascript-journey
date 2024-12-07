@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+  </head>
+  <body>
+    <h1 class="color">Change Background Color</h1>
+    <div>
+      <button class="button" id="grey">Grey</button>
+      <button class="button" id="blue">Blue</button>
+      <button class="button" id="red">Red</button>
+    </div>
+    <script>
+      document.body.addEventListener("click", (e) => {
+        if (e.target.classList.contains("button")) {
+          document.body.style.background = e.target.id;
+        }
+      });
+      const color = document.querySelector(".color");
+      color.style.color = "green";
+    </script>
+  </body>
+</html>
