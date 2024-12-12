@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Propogation</title>
+  </head>
+  <body>
+    <!-- Two types of event propogation -->
+    <!-- Event Bubbling  // false // by default is fault -->
+    <!-- Event Capturing // true -->
+    <!--  how the propogation starts and how to stop it  ?? -->
+    <div id="parentdiv">
+      <img id="mns" src="./download.png" alt="" style="width: 200px" />
+      <img id="sadam" src="./sadam.png" alt="" style="width: 200px" />
+    </div>
+  </body>
+  <script>
+    document.getElementById("parentdiv").addEventListener("click", (e) => {
+      alert("Click on MNS");
+    });
+    document.getElementById("sadam").addEventListener("click", (e) => {
+      alert("Click on Sadam");
+      // stop bubbling
+      e.stopPropagation();
+    });
+    // agar me doono ko true krta hn to phir top to bottom aye ga pehle mns execute hga ,
+    // baad me sadam / called capturing
+    // agar me doono ko false krta hn to phir bottom to top jaye ga pehle sadam execute hga ,
+    //baad me mns / called bubbling
+
+    // target method
+    document.querySelector("#sadam").addEventListener("click", (e) => {
+      console.log(e.target);
+      //  let remove = e.target.parentNode;
+      let remove = e.target;
+      remove.remove();
+    });
+  </script>
+</html>

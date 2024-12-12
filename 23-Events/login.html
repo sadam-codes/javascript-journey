@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="select">
+      <input type="text" name="username" placeholder="Username" />
+      <input type="password" name="password" placeholder="Password" />
+      <button type="submit">submit</button>
+    </form>
+    <div id="message"></div>
+    <script>
+      document.getElementById("select").addEventListener("submit", (e) => {
+        const username = document.querySelector('input[name="username"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+
+        if (username === "" || password === "") {
+          document.getElementById("message").textContent =
+            "Username and password are required.";
+          event.preventDefault(); // Prevent form submission
+        } else {
+          document.getElementById("message").textContent =
+            "Form submitted successfully.";
+        }
+      });
+    </script>
+  </body>
+</html>

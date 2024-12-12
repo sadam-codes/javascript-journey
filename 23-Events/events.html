@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <!--  change event -->
+    <select class="select">
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <div>
+      <!-- <button onclick="alert('Hy')" class="button" id="hello">Hello</button> -->
+    </div>
+  </body>
+
+  <!-- Tell me the time , when the button is clicked -->
+  <button id="click">Click me</button>
+  <p id="tellTime"></p>
+
+  <script>
+    document.getElementById("click").addEventListener(
+      "click",
+      (e) => {
+        document.getElementById("tellTime").innerHTML = Date();
+      },
+      false
+    );
+
+    const store = document.querySelectorAll(".button").forEach((button) =>
+      button.addEventListener("click", (e) => {
+        alert("Hy");
+      })
+    );
+
+    document.querySelector(".select").addEventListener("submit", (e) => {
+      alert("changed");
+    });
+  </script>
+</html>
+<!-- Type , timestamp , defaultPrevented , target , toElement, secElement ,altkey, clientX, clientY, ctrlkey -->
+<!-- There are many events in JavaScript that you can use to respond to different actions
+      or changes in the browser. Here are some common events:
+
+=>  click - Occurs when the element is clicked.
+=>  mouseover - Occurs when the mouse pointer is moved over the element.
+=>  mouseout - Occurs when the mouse pointer is moved out of the element.
+=>  keydown - Occurs when a key on the keyboard is pressed.
+=>  keyup - Occurs when a key on the keyboard is released.
+=>  focus - Occurs when the element gains focus.
+=>  blur - Occurs when the element loses =focus.
+=>  change - Occurs when the value of a form element changes (e.g., input, select).
+=>  submit - Occurs when a form is submitted.
+=>  resize - Occurs when the browser window is resized.
+=>  load - Occurs when the element or the entire page is loaded.
+=>  scroll - Occurs when the user scrolls the page. -->
