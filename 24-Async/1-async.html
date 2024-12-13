@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async</title>
+  </head>
+  <body>
+    <h1>Text Canger</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const saySadam = function () {
+      console.log("HY Sadam");
+    };
+    setTimeout(saySadam, 5000);
+
+    // change the heading after 5 seconds
+    const changeText = () => {
+      document.querySelector("h1").innerHTML = " Hello Sadam";
+    };
+
+    const changeMe = setTimeout(changeText, 5000);
+    document.getElementById("stop").addEventListener("click", (e) => {
+      clearTimeout(changeMe);
+      console.log("Stoped");
+    });
+  </script>
+</html>

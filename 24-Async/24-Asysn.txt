@@ -1,0 +1,26 @@
+  By default the javaScript is 
+       => Synchronous language
+       => sigle threaded language
+execute context
+       => one line of code at one time
+console.log('First execute);
+console.log('Second execute);
+       => each step wait for the last one to complete before executing
+ 
+
+Q#01-:  Blocking code vs Non-Blocking code ??
+
+Blocking code -:   
+     =>  Block the flow of the code [Exmaple : dont do any work, until i reached ]
+     =>  Read the file as Sync     // until its execution , other code will not work
+Non-Blocking code -: 
+     =>  Don't block the flow of the code [Exmaple : Continue your work, until i reached ]
+     =>  Read the file as Async   //do other work , i will retrive other data from file.
+[
+
+// next example is : agar aik user register kr rha hi aur usko me msg dta hn k registration successful , 
+// until uski registration abhi baaqi hi, to Async yaha pe galat ho jaye ga., so this is not best choise
+// koi bhi chwz galat ya sai ni hti , 
+// hr aik ka usecase hta hi.issi liye kayi bar blocking lokhna prta hia aur kayi baar non-blocking loikhna prta hi
+
+] 
