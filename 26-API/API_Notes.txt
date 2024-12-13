@@ -1,0 +1,116 @@
+what is an API ??
+
+ API is just the talking language in two systems
+ => these two systems may be backend and frontend
+ => these two systems may be our backend and frontend
+ => these two systems may be backend of other and frontend of our's
+ =>if the frontend is developed in JavaScript and the backend i developed in Python
+
+        so how they talk to each ???
+
+Examples of API -:
+1 -: api.github.com/users/MUHAMMAD-SADAM
+2 -: randomuser.me  // but its structure is difficult to understand , so we use [JSON Formatter]
+=>   jsonformatter.org
+
+so , if we go on randomuser.me
+
+
+=> once we find ajex Format
+so if we click the url , then we will find the result
+$.ajax({
+  url: 'https://randomuser.me/api/',
+  dataType: 'json',
+  success: function(data) {
+    console.log(data);
+  }
+});
+   
+
+And second we find the Result 
+we have one object that contains two properties
+1-: result // and it is array
+2-: info  // and it is object
+
+
+{
+  "results": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Aldo",
+        "last": "Vázquez"
+      },
+      "location": {
+        "street": {
+          "number": 8739,
+          "name": "Boulevard Iraq"
+        },
+        "city": "El Rayón",
+        "state": "Chihuahua",
+        "country": "Mexico",
+        "postcode": 71855,
+        "coordinates": {
+          "latitude": "22.3956",
+          "longitude": "-72.9324"
+        },
+        "timezone": {
+          "offset": "+1:00",
+          "description": "Brussels, Copenhagen, Madrid, Paris"
+        }
+      },
+      "email": "aldo.vazquez@example.com",
+      "login": {
+        "uuid": "0e7d242a-d7c5-44ca-997c-3dfecac0bd77",
+        "username": "heavyrabbit323",
+        "password": "matt",
+        "salt": "YCUwtXQM",
+        "md5": "a6d4b1b926af3728d047943d23f3a30b",
+        "sha1": "025b88f460e11a4844414c0f866227cc40d01a04",
+        "sha256": "941f15c604b7df1390c7d0009369dac4a0389d68c6badd0ed1d19b12a8110a93"
+      },
+      "dob": {
+        "date": "1992-04-09T05:31:24.000Z",
+        "age": 31
+      },
+      "registered": {
+        "date": "2022-02-11T20:14:39.963Z",
+        "age": 2
+      },
+      "phone": "(676) 707 8442",
+      "cell": "(655) 263 7530",
+      "id": {
+        "name": "NSS",
+        "value": "23 12 66 7079 0"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/92.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/92.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/92.jpg"
+      },
+      "nat": "MX"
+    }
+  ],
+  "info": {
+    "seed": "d8b7d61caeb05838",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
+
+
+--------------------------
+XML http request           => before coming the fetch , we use this method for API request
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+
+
+XMLHttpRequest: readyState property 
+
+Value  	State   	              Description
+0	     UNSENT	                  Client has been created. open() not called yet.
+1    	 OPENED	                  open() has been called.
+2   	 HEADERS_RECEIVED	        send() has been called, and headers and status are available.
+3   	 LOADING	                Downloading; responseText holds partial data.
+4   	 DONE	                    The operation is complete.

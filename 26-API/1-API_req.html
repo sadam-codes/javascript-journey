@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Request</title>
+  </head>
+  <body>
+    <h1>API Request using XMLHttpRequest</h1>
+  </body>
+  <script>
+    const request_URL = "https://api.github.com/users/MUHAMMAD-SADAM";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", request_URL); // open will take two paramenters , 1- method , 2- string
+    xhr.onreadystatechange = () => {
+      // onreadystatechange will take function it self
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        const data = JSON.parse(xhr.responseText);
+        // parse will convert the string into JSON
+        console.log("Name is :", data.name);
+        console.log("Boi is :", data.bio);
+        console.log("avatar_url is :", data.avatar_url);
+        console.log("Followers are :", data.followers);
+        console.log("data is :", data);
+      }
+    };
+    xhr.send();
+  </script>
+</html>
