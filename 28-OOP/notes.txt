@@ -1,0 +1,31 @@
+Q-: What is OOP ?
+            Object-oriented programming (OOP) in JavaScript is a programming paradigm that uses objects and classes
+to structure code. OOP in JavaScript is based on prototypes, which allow objects to inherit properties and methods
+from other objects.
+
+Q-: what is object in OOP ?
+   collection of properties and methods
+
+Q-: Parts of OOP ?
+ 1- constructor function
+ 2- prototype
+ 3- classes
+ 4- instances (new /this keyword)
+Q-: four Pillars ? -:
+  1- abstration (Details hide)
+  2- encapsulation (wrapup the details)
+  3- inheritance (converting the properties from parent to child)
+  4- polymorphism (many forms)
+
+Q-: Does javaScript have classes ??
+ Ans -: 
+    Yes, JavaScript has classes. ECMAScript 2015 (ES6) introduced a class syntax that allows developers
+to define classes in a way that is similar to class-based languages like Java or C++. However, it's important to
+note that JavaScript's classes are primarily syntactical sugar over the existing prototype-based inheritance system.
+
+Under the hood, JavaScript's classes are still based on prototypes.
+When you define a class in JavaScript, you are actually defining a constructor function
+and adding methods to its prototype. 
+
+by useing the new keyword , new object will create
+by using the this keyword , current context will show
