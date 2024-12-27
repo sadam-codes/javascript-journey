@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show me seperate button on click</title>
+  </head>
+  <body>
+    <button id="buttonid" style="cursor: pointer">Submit</button>
+  </body>
+  <script>
+    const button = ["Click me ", "Click me again", "Click me more"];
+    let index = 0;
+    const store = document.getElementById("buttonid");
+    store.addEventListener("click", () => {
+      if (index < button.length) {
+        store.innerText = ` ${button[index]}`;
+        index++;
+      } else {
+        index = 0;
+        store.innerText = ` ${button[index]}`;
+        index++;
+      }
+    });
+  </script>
+</html>
