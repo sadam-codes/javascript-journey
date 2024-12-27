@@ -1,0 +1,53 @@
+1- Object datatype 
+2- key in Object
+3- datatype of key ?
+4- Unique Properties of Keys in JavaScript Objects
+             Keys Are Always Strings or Symbols
+             Keys Are Unique
+             Order of Keys (integer and then string)
+             Keys Can Store Functions
+
+5- Hashing in js ? 
+            Define ???
+            The process of converting data (such as a string or object) into a fixed-size string of characters,
+            often represented as a hash code or digest. Hashing is widely used in computer science and
+            programming for purposes like quick data lookups, password storage, and ensuring data integrity.
+
+            Key Features of Hashing ???
+            i-  Fixed Output Size -: Regardless of the input size, a hash function generates a fixed-size output
+            ii- Irreversible-: Hashing is generally one-way; it’s difficult to derive the original input from its hash value.
+
+            Common Uses of Hashing in JavaScript ???
+             i-  Password Security
+            
+            Hash Functions in JavaScript ???
+            JavaScript doesn’t have a built-in hash function in its standard library, but you can use libraries like crypto (Node.js) or third-party libraries for hashing.
+                 
+            const crypto = require('crypto');
+
+            // Create a hash from a string
+            const hash = crypto.createHash('sha256')
+                   .update('Hello, World!')
+                   .digest('hex');
+
+            console.log(hash); // Example output: "315f5bdb76d0f4b6c0d45d2161de00c51b3c11baf8304b0ccebebcd2"
+
+
+
+
+6- Hashing vs. Encryption ?
+
+                        Hashing ???
+                        One-way, irreversible.
+                        Used for integrity checks and storing sensitive data like passwords.
+
+                        Encryption ???
+                        Two-way, reversible with a key.
+                        Used to securely transfer sensitive data.
+
+7- Hoisting in js -
+
+
+
+
+

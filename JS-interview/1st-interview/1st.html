@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show me seperate names on click</title>
+  </head>
+  <body>
+    <h1 id="hello" style="cursor: pointer">Hello Sadam</h1>
+  </body>
+  <script>
+    const names = ["Ali", "Ahmad", "Rizwan"];
+    let index = 0;
+    const store = document.getElementById("hello");
+    store.addEventListener("click", () => {
+      if (index < names.length) {
+        store.innerText = `Hello ${names[index]}`;
+        index++;
+      } else {
+        index = 0;
+        store.innerText = `Hello ${names[index]}`;
+        index++;
+      }
+    });
+  </script>
+</html>
