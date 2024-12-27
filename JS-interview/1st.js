@@ -27,3 +27,7 @@ const name = {
 };
 
 console.log(Object.values(name));
+
+
+const myVar = 5;
+console.log(myVar); 

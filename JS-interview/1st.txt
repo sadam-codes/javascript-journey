@@ -2,10 +2,10 @@
 2- key in Object
 3- datatype of key ?
 4- Unique Properties of Keys in JavaScript Objects
-             Keys Are Always Strings or Symbols
-             Keys Are Unique
-             Order of Keys (integer and then string)
-             Keys Can Store Functions
+              Keys Are Always Strings or Symbols
+              Keys Are Unique
+              Order of Keys (integer and then string)
+              Keys Can Store Functions
 
 5- Hashing in js ? 
             Define ???
@@ -37,17 +37,46 @@
 
 6- Hashing vs. Encryption ?
 
-                        Hashing ???
-                        One-way, irreversible.
-                        Used for integrity checks and storing sensitive data like passwords.
+              Hashing ???
+              One-way, irreversible.
+              Used for integrity checks and storing sensitive data like passwords.
 
-                        Encryption ???
-                        Two-way, reversible with a key.
-                        Used to securely transfer sensitive data.
+              Encryption ???
+              Two-way, reversible with a key.
+              Used to securely transfer sensitive data.
 
 7- Hoisting in js -
+              Hoisting is a JavaScript mechanism where variables and function declarations are moved 
+              (or hoisted) to the top of their containing scope during the compile phase, before the 
+              code has been executed. This means that you can reference variables or functions before
+              they are declared in the code.
+                     
+              Hoisting with var ? 
 
+              console.log(myVar); // undefined (not ReferenceError)
+              var myVar = 5;
+              console.log(myVar); // 5
 
+              Hoisting with let or const ? 
 
+              console.log(myVar); // ReferenceError: Cannot access 'myVar' before initialization
+              let myVar = 5;
+ 
+uses of spread operator ?
 
+8- Adding/Overriding Properties in Objects: ??
 
+              let person = { name: "Alice", age: 25 };
+              let updatedPerson = { ...person, age: 26, city: "New York" };
+              console.log(updatedPerson);  // { name: "Alice", age: 26, city: "New York" }
+
+9 - Combining Arrays and Objects with New Values ??
+ 
+              let arr = [1, 2, 3];
+              let newArr = [...arr, 4, 5];
+              console.log(newArr);  // [1, 2, 3, 4, 5]
+
+10- Array Copy:
+              let arr = [1, 2, 3];
+              let copyArr = [...arr];
+              console.log(copyArr);  // [1, 2, 3]
