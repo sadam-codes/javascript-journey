@@ -80,3 +80,34 @@ uses of spread operator ?
               let arr = [1, 2, 3];
               let copyArr = [...arr];
               console.log(copyArr);  // [1, 2, 3]
+
+11-
+             let number;       // Declaratiqon
+             number = 42;      // Initialization
+             number = 100;     // Assignment (re-assignment)
+             console.log(number); // Output: 100      
+
+12- How do you declare a constant object in JavaScript, and can you modify its properties? 
+    
+            const person = { name: "John" };
+            person.name = "Jane"; // Allowed
+13- Can variables in JavaScript hold other variables or functions as values?
+
+            let x = 10;
+            let y = x;
+            let func = function() { return "Hello"; };
+
+14- What is variable shadowing in JavaScript?
+            Shadowing occurs when a local variable in a function or block has the same name
+            as a variable in the outer scope, hiding the outer variable.
+
+15- What is the difference between null and undefined in JavaScript?
+ 
+           null: An assigned value representing "no value" or "empty."
+           undefined: A variable that has been declared but not assigned a value.
+
+                    let a; // undefined
+                    let b = null; // null
+
+16-
+
