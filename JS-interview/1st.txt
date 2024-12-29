@@ -109,5 +109,7 @@ uses of spread operator ?
                     let a; // undefined
                     let b = null; // null
 
-16-
+16- What is the purpose of async/await?
+
+              async/await simplifies working with promises by allowing asynchronous code to look synchronous.
 
