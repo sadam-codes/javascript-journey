@@ -113,3 +113,13 @@ uses of spread operator ?
 
               async/await simplifies working with promises by allowing asynchronous code to look synchronous.
 
+17-: What are objects in JavaScript?
+
+               Objects in JavaScript are collections of key-value pairs. They are used to store 
+               related data and functionality. Keys are strings (or symbols), and values can be of any type.
+18- What is object destructuring?
+             
+              const obj = { name: "John", age: 30 };
+              const { name, age } = obj;
+              console.log(name); // Output: John
+              console.log(age); // Output: 30
