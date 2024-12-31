@@ -123,3 +123,11 @@ uses of spread operator ?
               const { name, age } = obj;
               console.log(name); // Output: John
               console.log(age); // Output: 30
+
+19 - How do you create an array in JavaScript?
+              let arr = [1, 2, 3]; // Using square brackets
+              let arr2 = new Array(4, 5, 6); // Using Array constructor
+ 
+ 20- How do you find the length of an array?
+              let arr = [1, 2, 3];
+              console.log(arr.length); // Output: 3
