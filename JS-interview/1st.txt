@@ -131,3 +131,12 @@ uses of spread operator ?
  20- How do you find the length of an array?
               let arr = [1, 2, 3];
               console.log(arr.length); // Output: 3
+
+
+21- What is the map() method in JavaScript?
+
+       Explain its purpose and how it differs from forEach.
+
+22- How does map() differ from a traditional for loop?
+
+       Compare the two in terms of return value and immutability.
