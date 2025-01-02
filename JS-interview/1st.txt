@@ -140,3 +140,17 @@ uses of spread operator ?
 22- How does map() differ from a traditional for loop?
 
        Compare the two in terms of return value and immutability.
+23- What is the difference between == and === in an if condition?
+
+       == checks for equality after type coercion (loose comparison).
+       === checks for equality without type coercion (strict comparison).
+
+       if (5 == "5") { console.log("Equal"); } // Output: Equal
+       if (5 === "5") { console.log("Not Equal"); } // Output: Nothing
+24- When should you use a ternary operator instead of an if-else statement?
+
+       Use a ternary operator when the condition and action are simple and concise.
+       For complex logic, prefer if-else.
+
+       let message = age >= 18 ? "Adult" : "Minor";
+       console.log(message); // Output depends on the value of `age`
