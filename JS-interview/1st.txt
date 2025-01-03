@@ -154,3 +154,14 @@ uses of spread operator ?
 
        let message = age >= 18 ? "Adult" : "Minor";
        console.log(message); // Output depends on the value of `age`
+
+25- What is the difference between arguments and rest parameters?
+       An array-like object containing all arguments passed to a function.
+       Not available in arrow functions.
+Example:
+
+       function demo() {
+        console.log(arguments);
+       } 
+       demo(1, 2, 3); // Output: [1, 2, 3]
+
