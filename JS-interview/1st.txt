@@ -165,3 +165,21 @@ Example:
        } 
        demo(1, 2, 3); // Output: [1, 2, 3]
 
+26- What is function overloading? Does JavaScript support it?
+
+       Function overloading is defining multiple functions with the same name but 
+       different numbers or types of parameters.
+
+       JavaScript does not natively support function overloading, 
+       but you can mimic it using argument checks.
+
+Example:
+       function overloadedFunc(a, b) {
+       if (typeof b === "undefined") {
+       return a;
+       }
+       return a + b;
+       }
+       console.log(overloadedFunc(5)); // 5
+       console.log(overloadedFunc(5, 10)); // 15
+
