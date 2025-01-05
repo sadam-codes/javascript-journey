@@ -183,3 +183,7 @@ Example:
        console.log(overloadedFunc(5)); // 5
        console.log(overloadedFunc(5, 10)); // 15
 
+27- What is the difference between synchronous and asynchronous code?
+A:
+      Synchronous: Blocks the execution of subsequent code until the current task is finished.
+      Asynchronous: Allows subsequent code to execute while waiting for a task to complete.
