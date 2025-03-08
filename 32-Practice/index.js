@@ -74,9 +74,30 @@ for (let index = 1; index <= 10; index++) {
 }
 
 /////////////////////////////
-const stop = null
-while (stop === stop) {
-    stop(prompt("enter word stop to end this loop"))
-    console.log(stop)
+
+let num = 5
+let i = 1
+do {
+    console.log(`Table is ${num} * ${i} = ${num * i}`)
+    i++
+} while (i <= 10);
+
+///////////////////////////
+// with normal function
+function greetOne(username = "ss") {
+    return `Aoa ${username}`
 }
-console.log("Loop Stoped")
+console.log(greetOne())
+/////////////////////////
+// with arrow function
+const greet = (username = "Ali") => {
+    return `Aoa ${username}`
+}
+console.log(greet("Sadam"))
+//////////////////////////////
+const sumOfTwoNumbers = (a, b) => {
+    return a + b
+}
+console.log(sumOfTwoNumbers(2, 3))
+
+//////////////////////////////
