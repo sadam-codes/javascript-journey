@@ -84,13 +84,13 @@ do {
 
 ///////////////////////////
 // with normal function
-function greetOne(username = "ss") {
+function greetOne(username = "Sadam") {
     return `Aoa ${username}`
 }
 console.log(greetOne())
 /////////////////////////
 // with arrow function
-const greet = (username = "Ali") => {
+const greet = (username = "Sadam") => {
     return `Aoa ${username}`
 }
 console.log(greet("Sadam"))
@@ -98,6 +98,6 @@ console.log(greet("Sadam"))
 const sumOfTwoNumbers = (a, b) => {
     return a + b
 }
-console.log(sumOfTwoNumbers(2, 3))
+console.log(sumOfTwoNumbers(4, 5))
 
 //////////////////////////////
