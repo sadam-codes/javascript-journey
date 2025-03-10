@@ -6,13 +6,13 @@ console.log(`Age is ${age}`)
 ///////////////////////////////////
 
 // function sadam() {
-//     const x = 10
+//     const a = 10
 // }
-// console.log(x)
+// console.log(a)
 
 // output =>  ReferenceError: x is not defined
 //////////////////////////////////
-const number1 = 10;
+const number1 = 20;
 const number2 = 5
 console.log(number1 + number2)
 console.log(number1 - number2)
@@ -29,13 +29,13 @@ console.log(typeof Number(stringtwo)); // Output: number
 
 let number = 8;
 if (number % 2 === 0) {
-    console.log("Number is even")
+    console.log("Number is Even")
 }
 else {
     console.log("Number is Odd")
 }
 //////////////////////////
-const person = 12
+const person = 15
 if (person >= 20) {
     console.log("Person is Senior")
 }
@@ -49,7 +49,7 @@ else {
     console.log("Person is child")
 }
 ///////////////////////////
-const checkNumber = 10;
+const checkNumber = 15;
 const resultAfterChecking = (checkNumber > 0) ? "Number is Positive" : (checkNumber < 0) ? "Number is  Negative" : "Number is Zero"
 console.log(resultAfterChecking)
 /////////////////////////
