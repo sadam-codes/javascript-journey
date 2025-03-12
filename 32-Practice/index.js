@@ -122,3 +122,34 @@ const highestNumber = () => {
     return Math.max(...allNumbers)
 }
 console.log(highestNumber())
+
+// Write an arrow function square that returns the square of a number.
+const square = () => {
+    let number = 36;
+    return Math.sqrt(number)
+}
+console.log(square())
+
+// Write an arrow function that returns the first string longer than 5 characters from a list.
+const firstString = (string) => {
+    const Storeresult = string.find(newstring => newstring.length >= 5)
+    return Storeresult ? Storeresult : "No matching string"
+}
+const words = ['Sadam', 'Ali', 'Ahmad']
+console.log(firstString(words))
+
+// Create an array of numbers and sum all the elements using a loop.
+const arrayOfNumbers = [10, 20, 30]
+let element = 0
+for (let index = 0; index < arrayOfNumbers.length; index++) {
+    element += arrayOfNumbers[index];
+}
+console.log(`Sum of all numbers is : ${element}`);
+
+// Remove duplicates from an array of numbers manually.
+// its not manually , due to optimization
+let arr = [2, 2, 3, 5, 5, 3, 4]
+const removeDuplicates = () => {
+    return [...new Set(arr)]
+}
+console.log(removeDuplicates())
