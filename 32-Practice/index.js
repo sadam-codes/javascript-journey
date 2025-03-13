@@ -153,3 +153,14 @@ const removeDuplicates = () => {
     return [...new Set(arr)]
 }
 console.log(removeDuplicates())
+
+// Write a function createHelloWorld. It should return a new function that always returns "Hello World".
+const createHelloWorld = () => {
+    const name = 'sadam'
+    return () => {
+        return `Hello ${name}`
+    }
+}
+console.log(createHelloWorld()())
+// const results = createHelloWorld();
+// console.log(results());
