@@ -164,3 +164,14 @@ const createHelloWorld = () => {
 console.log(createHelloWorld()())
 // const results = createHelloWorld();
 // console.log(results());
+
+var a = 2;
+function test() {
+  console.log(a); 
+  var a = 5;
+  console.log(a);
+}
+test();
+
+// undefined
+// 5
