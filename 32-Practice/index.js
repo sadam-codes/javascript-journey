@@ -167,11 +167,15 @@ console.log(createHelloWorld()())
 
 var a = 2;
 function test() {
-  console.log(a); 
-  var a = 5;
-  console.log(a);
+    console.log(a);
+    var a = 5;
+    console.log(a);
 }
 test();
 
 // undefined
 // 5
+console.log(addNumber(3))
+function addNumber(a) {
+    return a + 1
+}
