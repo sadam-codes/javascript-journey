@@ -87,16 +87,29 @@ const filterFun = () => {
 console.log(filterFun())
 
 
-//
+// Create an array of strings ["john", "jane", "jack"].
+// Use map to convert each name to uppercase and print the new array.
+
 const names = ["john", "jane", "jack"];
 convertedNames = names.map((names) => {
     return names.toUpperCase()
 })
 console.log(convertedNames)
 
-// 
+//  Create an array of numbers [2, 4, 6, 8].
+// Use reduce to calculate the product of all the numbers and print the result.
+
 const productUsingReduce = [2, 4, 6, 8];
 const ProductResult = productUsingReduce.reduce((acc, curr) => {
     return acc * curr
 })
 console.log(ProductResult)
+
+//Write a function that generates a random number between 50 and 100 and returns it.
+// Round the number to the nearest integer using Math.round() and print the result.
+
+const generateRandomNumbers = () => {
+    const RandomNumbers = Math.random() * (100 - 50) + 50;
+    return (Math.round(RandomNumbers))
+}
+console.log(generateRandomNumbers())
