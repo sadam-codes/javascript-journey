@@ -112,4 +112,13 @@ const generateRandomNumbers = () => {
     const RandomNumbers = Math.random() * (100 - 50) + 50;
     return (Math.round(RandomNumbers))
 }
-console.log(generateRandomNumbers())
+
+// Write a function that takes a date string "2025-03-21" and returns the day of the week (e.g., "Monday").
+// Convert the string date into a Date object and print it.
+
+const getWeeks = (datestring) => {
+    const date = new Date(datestring);
+    console.log(`Date Object : ${date}`)
+    return date.toLocaleString('en-US', { weekday: 'long' })
+}
+console.log(getWeeks("2025-03-21"))
