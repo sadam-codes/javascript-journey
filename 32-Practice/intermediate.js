@@ -122,3 +122,46 @@ const getWeeks = (datestring) => {
     return date.toLocaleString('en-US', { weekday: 'long' })
 }
 console.log(getWeeks("2025-03-21"))
+
+// Write a function that calculates the difference between two dates and 
+// returns the number of days between them.
+
+const getDaysDifference = (date1, date2) => {
+    return Math.abs((new Date(date2) - new Date(date1)) / 86400000); // 86400000 = 1000ms * 60s * 60m * 24h
+};
+
+console.log(getDaysDifference("2025-03-15", "2025-03-21"));
+
+//Write a function that takes two numbers and divides them. Use a try-catch block to 
+// handle any potential division by zero errors and return a message ("Cannot divide by zero") 
+// in case of an error.
+
+const TakesTwoNumbers = (num1, num2) => {
+    try {
+        if (num2 === 0) {
+            throw new Error("Cannot divide by zero");
+        }
+        return num1 / num2
+    } catch (error) {
+        return error.message;
+    }
+}
+console.log(TakesTwoNumbers(10, 2));
+console.log(TakesTwoNumbers(10, 0));
+
+// Write a function that checks whether an input number is positive. If the number is negative, 
+// throw a custom error with the message: "Negative number not allowed".
+
+const InputNumbers = (number) => {
+    try {
+        if (number < 0) {
+            throw new Error("Negative number not allowed");
+        }
+        return "Number is positive";
+    } catch (error) {
+        return error.message;
+    }
+}
+console.log(InputNumbers(10));
+console.log(InputNumbers(-10));
+
