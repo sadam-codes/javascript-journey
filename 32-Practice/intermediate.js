@@ -77,3 +77,26 @@ const totalSum = sumOfAllNunbers.reduce((total, currentValue) => {
     return total + currentValue
 }, 5) // Also Add 5 into sumOfAllNunbers by-dafault
 console.log(totalSum)
+
+// 9-: Create an array of mixed numbers [10, 15, 20, 25, 30].
+// Write a function that uses filter to return only the numbers divisible by 5 and print the result.
+const MixedNumbers = [10, 15, 20, 25, 23];
+const filterFun = () => {
+    return MixedNumbers.filter(num => num % 5 === 0)
+}
+console.log(filterFun())
+
+
+//
+const names = ["john", "jane", "jack"];
+convertedNames = names.map((names) => {
+    return names.toUpperCase()
+})
+console.log(convertedNames)
+
+// 
+const productUsingReduce = [2, 4, 6, 8];
+const ProductResult = productUsingReduce.reduce((acc, curr) => {
+    return acc * curr
+})
+console.log(ProductResult)
