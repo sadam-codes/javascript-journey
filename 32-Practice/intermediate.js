@@ -46,7 +46,7 @@ console.log(stringIntoObject, typeof stringIntoObject)
 // 5: Create an array of numbers [1, 2, 3, 4, 5].
 // Use forEach to print each element of the array squared.
 
-const allNumbers = [1, 2, 3, 4, 5]
+const allNumbers = [1, 2, 3, 4, 5, 6, 7]
 allNumbers.forEach(number => {
     console.log(Math.pow(number, 2))
 });
@@ -63,7 +63,7 @@ console.log(newArrayOfFruits)
 // 7-: Create an array of numbers [5, 10, 15, 20, 25].
 // Use filter to get all numbers that are greater than or equal to 15 and print them
 
-const Numbers = [5, 10, 15, 20, 25];
+const Numbers = [5, 10, 15, 20, 25, 30];
 const FilteredNumbers = Numbers.filter((num) => {
     return num > 15
 })
@@ -72,7 +72,7 @@ console.log(FilteredNumbers)
 // 8-: Create an array of numbers [1, 2, 3, 4, 5].
 // Use reduce to find the sum of the numbers in the array.
 
-const sumOfAllNunbers = [1, 2, 3, 4, 5];
+const sumOfAllNunbers = [1, 2, 3, 4, 5, 6, 7];
 const totalSum = sumOfAllNunbers.reduce((total, currentValue) => {
     return total + currentValue
 }, 5) // Also Add 5 into sumOfAllNunbers by-dafault
