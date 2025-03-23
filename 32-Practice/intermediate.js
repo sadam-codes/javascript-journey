@@ -121,7 +121,7 @@ const getWeeks = (datestring) => {
     console.log(`Date Object : ${date}`)
     return date.toLocaleString('en-US', { weekday: 'long' })
 }
-console.log(getWeeks("2025-03-21"))
+console.log(getWeeks("2025-03-23"))
 
 // Write a function that calculates the difference between two dates and 
 // returns the number of days between them.
@@ -146,8 +146,8 @@ const TakesTwoNumbers = (num1, num2) => {
         return error.message;
     }
 }
-console.log(TakesTwoNumbers(10, 2));
-console.log(TakesTwoNumbers(10, 0));
+console.log(TakesTwoNumbers(20, 2));
+console.log(TakesTwoNumbers(20, 0));
 
 // Write a function that checks whether an input number is positive. If the number is negative, 
 // throw a custom error with the message: "Negative number not allowed".
@@ -157,7 +157,7 @@ const InputNumbers = (number) => {
         if (number < 0) {
             throw new Error("Negative number not allowed");
         }
-        return "Number is positive";
+        return "The Number is positive";
     } catch (error) {
         return error.message;
     }
