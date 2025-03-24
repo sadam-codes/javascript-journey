@@ -87,10 +87,10 @@ const filterFun = () => {
 console.log(filterFun())
 
 
-// Create an array of strings ["john", "jane", "jack"].
+// Create an array of strings ["Sadam", "Hasnain", "Hamza"].
 // Use map to convert each name to uppercase and print the new array.
 
-const names = ["john", "jane", "jack"];
+const names = ["Sadam", "Hasnain", "Hamza"];
 convertedNames = names.map((names) => {
     return names.toUpperCase()
 })
