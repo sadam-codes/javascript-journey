@@ -179,3 +179,16 @@ console.log(addNumber(3))
 function addNumber(a) {
     return a + 1
 }
+
+
+// setTimeout and setInterval difference ?
+// setTimeout ? Runs once after the specified delay
+// setInterval ? Runs repeatedly at the specified interval
+
+const y = setInterval(() => {
+    console.log("Run after every 1 seconds")
+}, 1000);
+
+setTimeout(() => {
+    clearInterval(y)
+}, 6000);
