@@ -191,4 +191,4 @@ const y = setInterval(() => {
 
 setTimeout(() => {
     clearInterval(y)
-}, 6000);
+}, 7000);
