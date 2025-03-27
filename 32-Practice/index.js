@@ -156,7 +156,7 @@ console.log(removeDuplicates())
 
 // Write a function createHelloWorld. It should return a new function that always returns "Hello World".
 const createHelloWorld = () => {
-    const name = 'sadam'
+    const name = 'Sadam Muneer'
     return () => {
         return `Hello ${name}`
     }
@@ -176,8 +176,8 @@ test();
 // undefined
 // 5
 console.log(addNumber(3))
-function addNumber(a) {
-    return a + 1
+function addNumber(add) {
+    return add + 1
 }
 
 
