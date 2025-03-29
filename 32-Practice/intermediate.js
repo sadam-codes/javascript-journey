@@ -129,7 +129,6 @@ console.log(getWeeks("2025-03-23"))
 const getDaysDifference = (date1, date2) => {
     return Math.abs((new Date(date2) - new Date(date1)) / 86400000); // 86400000 = 1000ms * 60s * 60m * 24h
 };
-
 console.log(getDaysDifference("2025-03-15", "2025-03-21"));
 
 //Write a function that takes two numbers and divides them. Use a try-catch block to 

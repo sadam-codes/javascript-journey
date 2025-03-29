@@ -186,7 +186,7 @@ function addNumber(add) {
 // setInterval ? Runs repeatedly at the specified interval
 
 const y = setInterval(() => {
-    console.log("Run after every 2 seconds")
+    console.log("Run after every two seconds")
 }, 2000);
 
 setTimeout(() => {
