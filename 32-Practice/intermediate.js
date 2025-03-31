@@ -175,7 +175,7 @@ const fetchData = async () => {
         const { bio } = data
         console.log(`Github Bio using fetch method is : ${bio}`)
     } catch (error) {
-        console.log(error)
+        console.error("Error fetching data:", error.message);
     }
 }
 fetchData()
