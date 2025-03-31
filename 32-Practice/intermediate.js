@@ -1,3 +1,4 @@
+const axios = require('axios');
 // 1-: Create an object car with properties: make, model, year, and color.
 // Access and print the make and model of the car.
 
@@ -163,4 +164,36 @@ const InputNumbers = (number) => {
 }
 console.log(InputNumbers(10));
 console.log(InputNumbers(-10));
+
+
+
+// 
+const fetchData = async () => {
+    try {
+        let response = await fetch('https://api.github.com/users/sadam-codes')
+        let data = await response.json()
+        const { bio } = data
+        console.log(`Github Bio using fetch method is : ${bio}`)
+    } catch (error) {
+        console.log(error)
+    }
+}
+fetchData()
+
+// 
+const fetchGitHubData = async () => {
+    try {
+        let response = await axios.get('https://api.github.com/users/sadam-codes');
+        let { bio } = response.data;
+        console.log(`Github Bio using axios method is : ${bio}`)
+    } catch (error) {
+        console.error("Error fetching data:", error.message);
+    }
+};
+
+fetchGitHubData();
+
+
+
+
 
