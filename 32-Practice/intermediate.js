@@ -173,9 +173,9 @@ const fetchData = async () => {
         let response = await fetch('https://api.github.com/users/sadam-codes')
         let data = await response.json()
         const { bio } = data
-        console.log(`Github Bio using fetch method is : ${bio}`)
+        console.log(`Github Bio using the fetch method is : ${bio}`)
     } catch (error) {
-        console.error("Error fetching data:", error.message);
+        console.error("Error in fetching data:", error.message);
     }
 }
 fetchData()
@@ -185,9 +185,9 @@ const fetchGitHubData = async () => {
     try {
         let response = await axios.get('https://api.github.com/users/sadam-codes');
         let { bio } = response.data;
-        console.log(`Github Bio using axios method is : ${bio}`)
+        console.log(`Github Bio using the axios method is : ${bio}`)
     } catch (error) {
-        console.error("Error fetching data:", error.message);
+        console.error("Error in fetching data:", error.message);
     }
 };
 
