@@ -99,7 +99,7 @@ do {
 } while (i <= 10);
 
 // Write a greet function that takes a name and prints a greeting.
-function greetOne(username = "Sadam") {
+function greetOne(username = "Hasnain") {
     return `Aoa ${username}`
 }
 console.log(greetOne())
@@ -135,11 +135,11 @@ const firstString = (string) => {
     const Storeresult = string.find(newstring => newstring.length >= 5)
     return Storeresult ? Storeresult : "No matching string"
 }
-const words = ['Sadam', 'Ali', 'Ahmad']
+const words = ['Sadam', 'Ali', 'Manzar']
 console.log(firstString(words))
 
 // Create an array of numbers and sum all the elements using a loop.
-const arrayOfNumbers = [10, 20, 30]
+const arrayOfNumbers = [10, 20, 50]
 let element = 0
 for (let index = 0; index < arrayOfNumbers.length; index++) {
     element += arrayOfNumbers[index];
