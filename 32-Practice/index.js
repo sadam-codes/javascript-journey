@@ -8,25 +8,25 @@ console.log(`Age is ${age}`)
 // Declare a variable x inside a function and try to access it outside. What happens?
 
 // function sadam() {
-//     const a = 10
+//     const a = 20
 // }
 // console.log(a)
 
 // output =>  ReferenceError: x is not defined
 
 // Calculate the sum, difference, product, and quotient of two numbers.
-const number1 = 20;
+const number1 = 30;
 const number2 = 5
 console.log(number1 + number2)
 console.log(number1 - number2)
 console.log(number1 * number2)
 console.log(number1 / number2)
 
-// Convert a string "123" to a number and back to a string. Print both.
-const stringOne = '123'
+// Convert a string "12345" to a number and back to a string. Print both.
+const stringOne = '12345'
 console.log(typeof stringOne) //  Output: string
 // 
-const stringtwo = '123';
+const stringtwo = '12345';
 console.log(typeof Number(stringtwo)); // Output: number
 
 // Check if a number is even or odd using the modulo operator.
