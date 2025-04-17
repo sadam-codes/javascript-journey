@@ -100,7 +100,7 @@ console.log(convertedNames)
 //  Create an array of numbers [2, 4, 6, 8].
 // Use reduce to calculate the product of all the numbers and print the result.
 
-const productUsingReduce = [2, 4, 6, 8];
+const productUsingReduce = [4, 6, 8, 10];
 const ProductResult = productUsingReduce.reduce((acc, curr) => {
     return acc * curr
 })
