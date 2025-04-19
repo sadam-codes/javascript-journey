@@ -6,8 +6,8 @@ var accoutPassword = "123445F";
 accountCity = "Lahore";
 
 // specificID = 3;
-accoutEmail = "sadam@google.com";
-accoutPassword = "756432";
+accoutEmail = "sadam@gmail.com";
+accoutPassword = "1122";
 accountCity = "Multan";
 
 console.log(specificID, accoutEmail, accoutPassword, accountCity); // show all the data in simple form
