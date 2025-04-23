@@ -6,7 +6,7 @@ console.log(name.__proto__);
 // All string methods // prototypes
 console.log(name.length);
 console.log(name.charAt(2));
-console.log(name.indexOf("d"));
+console.log(name.indexOf("m"));
 console.log(name.substring(0, 3)); // used to divide the string
 console.log(name.slice(-4, 4)); // used to reverse the string
 
@@ -18,7 +18,7 @@ const url = "https://sadammuneer.com/student%20ofbscs";
 console.log(url.replace("%20", "-")); // replace any word from the string
 console.log(url.includes("Ali")); // it return false bcz word "Ali" is not present in string
 
-const splitMethod = "Sadam Munner StudentOf BSCS";
+const splitMethod = "Sadam Muneer StudentOf BSCS";
 console.log(splitMethod.split(" ")); // it will convert string into array based object, and we can split from any word
 
 // print Capital Alphabets

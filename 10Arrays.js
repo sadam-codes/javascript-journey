@@ -28,7 +28,7 @@ console.log(joinarray, typeof joinarray);
 // difference b/w slice and aplice
 
 const originalArrray = [0, 1, 2, 3, 4, 5];
-console.log("Original Array", originalArrray);
+console.log("The Original Array is", originalArrray);
 
 const changedValue = originalArrray.slice(1, 3);
 console.log("Slice", changedValue);
