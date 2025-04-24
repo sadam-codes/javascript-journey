@@ -25,7 +25,7 @@ console.log(arrayMethods); // join()=> it will convert my array (Object) into st
 console.log(joinarray, typeof joinarray);
 
 // interview question
-// difference b/w slice and aplice
+// difference b/w slice and splice
 
 const originalArrray = [0, 1, 2, 3, 4, 5];
 console.log("The Original Array is", originalArrray);
@@ -46,7 +46,7 @@ console.log(arra2);
 // splice but also check original array
 const arra3 = arra1.splice(3, 5);
 console.log("splice", arra3);
-console.log("Original Array", arra1);
+console.log("The Original Array", arra1);
 
 // Merge two arrays
 const alphabets = ["A", "B", "C"];
