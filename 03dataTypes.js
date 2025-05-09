@@ -7,8 +7,8 @@ console.log(typeof null); // treat as object
   //2) object / user define data types
 
   let a, b, c;
-  a = 5;
-  b = 4;
+  a = 6;
+  b = 7;
   c = a + b;
   console.log("The answer is :" + c);
 
@@ -21,16 +21,16 @@ console.log(typeof null); // treat as object
 
   const sadam = [
     {
-      name: "ali",
+      name: "Ali",
       class: "BSCS",
-      uni: "MNUSAM",
+      uni: "MNSUAM",
     },
   ];
   const sadamtwo = [
     {
       name: "sadam",
       class: "BSCS",
-      uni: "MNUSAM",
+      uni: "MNSUAM",
     },
   ];
 
