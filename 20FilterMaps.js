@@ -9,7 +9,7 @@ const storeNums = numbers.filter((num) => num > 5);
 console.log(storeNums);
 
 // OR:
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const number = [3, 11, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const storeNum = number.filter((num) => {
   return num > 5;
 });
