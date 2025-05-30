@@ -4,7 +4,7 @@ const store = coding.forEach((item) => {
 });
 console.log(store); // give undefined , bcx foreach loop doest return any value
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 const storeNums = numbers.filter((num) => num > 5);
 console.log(storeNums);
 
