@@ -1,8 +1,9 @@
   By default the javaScript is 
-       => Synchronous language
+       => Synchronous language and also
        => sigle threaded language
-execute context
+that executes the context
        => one line of code at one time
+
 console.log('First execute);
 console.log('Second execute);
        => each step wait for the last one to complete before executing
